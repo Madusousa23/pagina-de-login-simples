@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Cor de fundo pastel */
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centraliza conteúdo dentro da div */
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease; /* Adiciona transição suave */
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #4CAF50; /* Verde mais escuro quando em foco */
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50; /* Verde */
+            color: #fff;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+        }
+        h2 {
+            color: #696969; /* Cinza escuro */
+            margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+        }
+        label {
+            color: #808080; /* Cinza médio */
+            font-weight: bold;
+        }
+        .links {
+            margin-top: 10px;
+        }
+        .links a {
+            color: #4CAF50; /* Verde */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <input type="submit" value="Entrar">
+        </form>
+        <div class="links">
+            <a href="#">Esqueceu a senha?</a>
+            <span>|</span>
+            <a href="#">Criar conta</a>
+        </div>
+    </div>
+</body>
+</html>
